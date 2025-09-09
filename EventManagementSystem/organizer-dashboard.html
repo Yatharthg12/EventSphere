@@ -1,0 +1,40 @@
+<!--Organizer Dashboard (after login)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organizer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📢 Organizer Dashboard</h2>
+
+    <div class="card">
+      <h3>Create New Event</h3>
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <input type="text" id="eventDesc" placeholder="Event Description">
+      <input type="date" id="eventDate">
+      <select id="eventCategory">
+        <option value="tech">Tech</option>
+        <option value="cultural">Cultural</option>
+        <option value="sports">Sports</option>
+      </select>
+
+      <!-- Create Event button -->
+      <button class="btn" id="createEventBtn" type="button">Create Event</button>
+    </div>
+
+    <div class="card">
+      <h3>Your Events</h3>
+      <div id="organizerEvents"></div>
+    </div>
+
+    <a href="index.html"><button class="btn logout">Logout</button></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!--EOF-->

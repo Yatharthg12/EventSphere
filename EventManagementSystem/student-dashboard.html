@@ -1,0 +1,36 @@
+<!-- Student Dashboard (after login)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎓 Student Dashboard</h2>
+
+    <div class="card">
+      <h3>Upcoming Events</h3>
+      <input type="text" id="searchStudent" placeholder="Search events..." onkeyup="filterStudentEvents()">
+      <select id="categoryFilterStudent" onchange="filterStudentEvents()">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="cultural">Cultural</option>
+        <option value="sports">Sports</option>
+      </select>
+      <div id="studentEvents"></div>
+    </div>
+
+    <div class="card">
+      <h3>My Registered Events</h3>
+      <div id="registeredEvents"></div>
+    </div>
+
+    <a href="index.html"><button class="btn logout">Logout</button></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!--EOF-->
